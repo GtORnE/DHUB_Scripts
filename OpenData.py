@@ -109,7 +109,7 @@ def extractHrefsDataBases(urls):
             email = driver.find_element(By.XPATH, value = './/a[@class="text-underline text-break"]').text
             lastUpdate = driver.find_element(By.XPATH, value = './/*[@id="content"]/section/div/div/div[2]/div/div[5]/p[2]').text
             
-            #change the recover info
+            #change the recovery info
             metaTitleFinal = unidecode.unidecode(metaTitle.lower())
             fuenteFinal = unidecode.unidecode(fuente.lower())
             authorFinal = unidecode.unidecode(author)
@@ -127,7 +127,7 @@ def extractHrefsDataBases(urls):
             metaTitleFinal = metaTitleFinal.replace(' ', '_')
             metaTitleFinal = metaTitleFinal.replace('/', '_')
             metaTitleFinal = metaTitleFinal.replace('?', '_')
-            metaTitleFinal = metaTitleFinal.replace('#', '_ ')
+            metaTitleFinal = metaTitleFinal.replace('#', '_')
             metaTitleFinal = metaTitleFinal.replace(':', '_')
             metaTitleFinal = metaTitleFinal.replace('|', '_')
             metaTitleFinal = metaTitleFinal.replace('<', '_')
@@ -215,7 +215,7 @@ if __name__ == "__main__":
         else:
             continue
 
-    driver.close()  # close the first driver
+    driver.close()  # close driver
 
     print("\n****Reading Metadata hrefs of CSV...****")
     links = read_csv('OpenDataHrefs.csv')
