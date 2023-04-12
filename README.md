@@ -10,4 +10,4 @@ ese conjunto de datos.
 # Data_SITREP.py
 Recopila los href de la pagina y los almacena en un .csv, luego de eso examina el archivo y va accediendo a cada uno de los links y los descarga. Para la 
 descarga utiliza reconocimiento optico de imagenes para lo cual dependerá mucho el navegador y la ventana de "guardar archivo", ya que esto podria cambiar 
-según el navegador que se esta o se va a utilizar. Los archivos .png también deben ser descargadas o ser reemplazados segun el navegador.
+según el navegador que se esta o se va a utilizar. Los archivos .png también deben ser descargados o ser reemplazados segun el navegador.
